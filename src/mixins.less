@@ -1,0 +1,37 @@
+.border-radius(@top_left, @top_right, @bottom_left, @bottom_right) {
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+}
+ 
+.border-radius(@top_left, @top_right, @bottom_left, @bottom_right) when not (@top_left = unchanged) {
+	-webkit-border-top-left-radius: @top_left;
+	-moz-border-radius-topleft: @top_left;
+	border-top-left-radius: @top_left;
+}
+ 
+.border-radius(@top_left, @top_right, @bottom_left, @bottom_right) when not (@top_right = unchanged) {
+	-webkit-border-top-right-radius: @top_right;
+	-moz-border-radius-topright: @top_right;
+	border-top-right-radius: @top_right;
+}
+ 
+.border-radius(@top_left, @top_right, @bottom_left, @bottom_right) when not (@bottom_left = unchanged) {
+	-webkit-border-bottom-left-radius: @bottom_left;
+	-moz-border-radius-bottomleft: @bottom_left;
+	border-bottom-left-radius: @bottom_left;
+}
+ 
+.border-radius(@top_left, @top_right, @bottom_left, @bottom_right) when not (@bottom_right = unchanged) {
+	-webkit-border-bottom-right-radius: @bottom_right;
+	-moz-border-radius-bottomright: @bottom_right;
+	border-bottom-right-radius: @bottom_right;
+}
+ 
+.border-radius(@top, @bottom) {
+	.border-radius(@top, @top, @bottom, @bottom);
+}
+ 
+.border-radius(@radius) {
+	.border-radius(@radius, @radius);
+}

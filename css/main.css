@@ -1,0 +1,67 @@
+body {
+  background-color: #f0f1f1;
+  font-family: Ubuntu, sans-serif;
+}
+#welcome-page {
+  margin: auto;
+  width: 1092px;
+}
+#welcome-page .lemon-bg {
+  background: url("../img/logo-circle.png");
+  width: 284px;
+  height: 284px;
+  margin: auto;
+  margin-top: 300px;
+  position: relative;
+}
+#welcome-page .lemon-bg img {
+  top: 50%;
+  left: 50%;
+  margin-top: -65px;
+  margin-left: -65px;
+  position: absolute;
+}
+#welcome-page .welcome {
+  font-size: 72px;
+  text-align: center;
+}
+#welcome-page .welcome p {
+  margin: 0;
+}
+#welcome-page .welcome .welcome-to {
+  font-weight: bold;
+}
+#welcome-page .client-login .login-btn {
+  display: block;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  font-weight: 100;
+  line-height: 50px;
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  cursor: pointer;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-right-radius: 5px;
+  height: 50px;
+  width: 175px;
+  border: 2px solid transparent;
+}
+#welcome-page .client-login .login-btn:hover {
+  background-color: #d4e442;
+  color: black;
+}
