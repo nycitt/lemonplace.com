@@ -1,26 +1,75 @@
 <html>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		
 	</head>
 	<body>
-		<div id="welcome-page">
-			<div class="lemon-bg">
-				<img src="img/lemon.png"/>
-			</div>
+		<div id="welcome-page" class="page">
+			<div class="center">
+				<div class="lemon-bg">
+					<img src="img/lemon.png"/>
+				</div>
 
-			<div class="welcome">
-				<p class="welcome-to">welcome to</p>
-				<p class="company">lemon place creative</p>
-			</div>
+				<div class="welcome">
+					<p class="welcome-to">welcome to</p>
+					<p class="company">lemon place creative</p>
+				</div>
 
-			<div class="client-login">
-				<span class="login-btn">Client Login</span>
+				<div class="client-login">
+					<span class="login-btn">Client Login</span>
+				</div>
 			</div>
 
 			<div class="scroll-down">
-				<span class="scroll-down"><div>
+				<a href="#!/services" class="icon-chevron-down"></a>
+			</div>
+
+			<div class="bottom-bar"></div>
+		</div>
+
+		<div id="our-work" class="page">
+			<div id="top-nav" class="navbar-inverse navbar-static-top navbar">
+				<div class="container">
+					<div class="nav-logo">
+
+					</div>
+
+					<ul class="nav">
+						<li><a href="#!/our-work">OUR WORK</a></li>
+						<li><a href="#!/about">ABOUT</a></li>
+						<li><a href="#!/services">SERVICES</a></li>
+						<li><a href="#!/blog">BLOG</a></li>
+						<li><a href="#!/contacts">CONTACTS</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="container content">
+				<ul class="portfolio">
+					<li class="span6">
+						<img src="portfolio/1.jpg"/>
+					</li>
+					<li class="span6">
+						<img src="portfolio/2.jpg"/>
+					</li>
+				</ul>
 			</div>
 		</div>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+		<script src="js/jquery.masonry.min.js"></script>
+		<script src="js/jquery.rotate.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.scrollorama.js"></script>
+
+		<script src="js/main.js"></script>
+
 	</body>
 </html>

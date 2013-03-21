@@ -2,16 +2,50 @@ body {
   background-color: #f0f1f1;
   font-family: Ubuntu, sans-serif;
 }
+#top-nav {
+  background-color: black;
+  height: 70px;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+#top-nav .nav-logo {
+  background: url("../img/nav-logo.jpg");
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+#top-nav .nav {
+  float: right;
+}
+#top-nav .nav li {
+  line-height: 75px;
+  font-size: 16px;
+}
+#top-nav .nav li a {
+  padding-top: 0;
+}
+#top-nav .nav li a:hover {
+  color: #d4e442;
+}
 #welcome-page {
-  margin: auto;
-  width: 1092px;
+  height: 544px;
+  color: black;
+}
+#welcome-page .center {
+  height: 544px;
+  width: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -272px;
+  margin-left: -350px;
 }
 #welcome-page .lemon-bg {
-  background: url("../img/logo-circle.png");
-  width: 284px;
-  height: 284px;
+  background: url("../img/logo-bg.png");
+  width: 288px;
+  height: 288px;
   margin: auto;
-  margin-top: 300px;
   position: relative;
 }
 #welcome-page .lemon-bg img {
@@ -27,6 +61,8 @@ body {
 }
 #welcome-page .welcome p {
   margin: 0;
+  line-height: 1.2em;
+  font-weight: 100;
 }
 #welcome-page .welcome .welcome-to {
   font-weight: bold;
@@ -64,4 +100,46 @@ body {
 #welcome-page .client-login .login-btn:hover {
   background-color: #d4e442;
   color: black;
+}
+#welcome-page .scroll-down {
+  background-color: #d4e442;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  -webkit-border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 5px;
+  border-top-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  border-top-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -moz-border-radius-bottomleft: 5px;
+  border-bottom-left-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px;
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -17px;
+}
+#welcome-page .bottom-bar {
+  position: fixed;
+  bottom: 0;
+  height: 4px;
+  color: #d4e442;
+}
+#our-work .content {
+  background-color: white;
+}
+#our-work.selected .content {
+  margin-top: 90px;
+}
+#our-work .portfolio {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }

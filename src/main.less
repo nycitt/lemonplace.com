@@ -1,23 +1,69 @@
 @import "mixins.less";
 @import "variables.less";
+
 @img: "../img";
+@page-width: 940px;
 
 body {
 	background-color: #f0f1f1;
 	font-family: Ubuntu, sans-serif;
 }
 
+#top-nav {
+	background-color: black;
+	height: 70px;
+
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	.nav-logo {
+		background: url("@{img}/nav-logo.jpg");
+		width: 70px;
+		height: 70px;
+		float: left;
+	}
+
+	.nav {
+		float: right;
+	}
+
+	.nav li {
+		line-height: 75px;
+		font-size: 16px;
+
+		a {
+			padding-top: 0;
+
+			&:hover {
+				color: @lime;
+			}
+		}
+	}
+}
+
 #welcome-page {
-	margin: auto;
-	width: 1092px;
+	height: 544px;
+
+	color: black;
+
+	.center {
+		height: 544px;
+		width: 700px;
+
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		margin-top: -544px/2;
+		margin-left: -700px/2;
+	}
 
 	.lemon-bg {
-		background: url("@{img}/logo-circle.png");
-		width: 284px;
-		height: 284px;
+		background: url("@{img}/logo-bg.png");
+		width: 288px;
+		height: 288px;
 
 		margin: auto;
-		margin-top: 300px;
 		position: relative;
 
 		@lemon-size: 130px;
@@ -33,16 +79,17 @@ body {
 	}
 
 	.welcome {
-
 		font-size: 72px;
 		text-align: center;
 
 		p {
 			margin: 0;
+			line-height: 1.2em;
+			font-weight: 100;
 		}
 
 		.welcome-to {
-			font-weight:bold
+			font-weight:bold;
 		}
 	}
 
@@ -70,6 +117,46 @@ body {
 		&:hover {
 			background-color: @lime;
 			color: black;
+		}
+	}
+
+	.scroll-down {
+		background-color: @lime;
+		.border-radius(5px);
+		padding: 10px;
+		width: 14px;
+		height: 14px;
+
+		position: absolute;
+		bottom: 30px;
+		left: 50%;
+		margin-left: -34px/2;
+	}
+
+	.bottom-bar {
+		position: fixed;
+		bottom: 0;
+		height: 4px;
+		color: @lime;
+	}
+}
+
+#our-work {
+	.content {
+		background-color: white;
+	}
+
+	&.selected .content {
+		margin-top: 90px;
+	}
+
+	.portfolio {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		> li {
+			
 		}
 	}
 }
