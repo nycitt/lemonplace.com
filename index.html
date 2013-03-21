@@ -12,9 +12,11 @@
 	<body>
 		<div id="welcome-page" class="page">
 			<div class="center">
-				<div class="lemon-bg">
-					<img src="img/lemon.png"/>
-				</div>
+				<a href="#!/our-work">
+					<div class="lemon-bg">
+						<img src="img/lemon.png"/>
+					</div>
+				</a>
 
 				<div class="welcome">
 					<p class="welcome-to">welcome to</p>
@@ -27,7 +29,7 @@
 			</div>
 
 			<div class="scroll-down">
-				<a href="#!/services" class="icon-chevron-down"></a>
+				<a href="#!/our-work" class="icon-chevron-down"></a>
 			</div>
 
 			<div class="bottom-bar"></div>
@@ -51,12 +53,58 @@
 			</div>
 
 			<div class="container content">
+				<div class="portfolio-filter-container">
+					<ul class="portfolio-filter">
+						<li class="selected">Ads</li>
+						<li class="selected">Websites</li>
+						<li>Logos</li>
+						<li>Branding</li>
+						<li>Photos</li>
+						<li>Prints</li>
+					</ul>
+					<div class="search">
+						<input type="text"/>
+					</div>
+				</div>
+
 				<ul class="portfolio">
-					<li class="span6">
+					<li class="">
 						<img src="portfolio/1.jpg"/>
+						<div class="info">
+							<h2> Machon Stam 
+								<span class="category">{logos}</span>
+							</h2>
+							<div class="description">
+								VHS gluten-free literally kale chips, dreamcatcher craft beer vice synth meggings keytar tumblr beard messenger bag actually. Whatever synth bushwick VHS, PBR sartorial meh. Literally squid post-ironic mumblecore terry richardson, blog chillwave brunch. Wolf scenester freegan artisan occupy viral literally, letterpress keffiyeh.
+							</div>
+						</div>
 					</li>
-					<li class="span6">
+					<li class="">
 						<img src="portfolio/2.jpg"/>
+					</li>
+					<li class="">
+						<img src="portfolio/3.jpg"/>
+					</li>
+					<li class="">
+						<img src="portfolio/4.jpg"/>
+					</li>
+					<li class="">
+						<img src="portfolio/5.jpg"/>
+					</li>
+					<li class="">
+						<img src="portfolio/6.jpg"/>
+					</li>
+					<li class="">
+						<img src="portfolio/7.jpg"/>
+					</li>
+					<li class="">
+						<img src="portfolio/8.jpg"/>
+					</li>
+					<li class="">
+						<img src="portfolio/9.jpg"/>
+					</li>
+					<li class="">
+						<img src="portfolio/10.jpg"/>
 					</li>
 				</ul>
 			</div>
@@ -66,6 +114,7 @@
 		<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
 		<script src="js/jquery.masonry.min.js"></script>
 		<script src="js/jquery.rotate.min.js"></script>
+		<script src="js/jquery.scrollto.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/jquery.scrollorama.js"></script>
 

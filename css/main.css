@@ -5,6 +5,7 @@ body {
 #top-nav {
   background-color: black;
   height: 70px;
+  z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
@@ -138,8 +139,39 @@ body {
 #our-work.selected .content {
   margin-top: 90px;
 }
+#our-work .portfolio-filter-container {
+  position: absolute;
+  right: -200px;
+  width: 200px;
+  background-color: black;
+}
 #our-work .portfolio {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 20px;
+}
+#our-work .portfolio > li {
+  width: 400px;
+  margin-bottom: 20px;
+}
+#our-work .portfolio > li .info {
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  width: 90%;
+  opacity: .9;
+  color: white;
+  padding: 5%;
+  font-weight: 100;
+  display: none;
+  z-index: 10;
+}
+#our-work .portfolio > li .info h2 {
+  color: #d4e442;
+  font-weight: 100;
+  margin-top: 0;
+}
+#our-work .portfolio > li .info h2 .category {
+  color: #BEBEBE;
+  font-size: 14px;
 }

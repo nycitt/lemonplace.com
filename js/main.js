@@ -15,15 +15,43 @@ $(function(){
 			this._resizePages();
 
 			this._watchScroll();
+			this._portfolioMasonry();
+			this._infoBoxSetup();
+			this._scrollDownButtons();
 
 			setInterval(this._bounceScrollDown, 2000);
 		},
 		_bounceScrollDown: function(){
-			console.log('a');
 			 $('.scroll-down').effect("bounce", { 
 			 	times: 20,
 			 	distance: 50,
-			 }, 5000);
+			 }, 3000);
+		},
+		_scrollDownButtons: function(){
+			$('[href="#!/our-work"]').click(function(){
+				$(window).scrollTo('#our-work', 'slow');
+			});
+		},
+		_infoBoxSetup: function(){
+			$('.portfolio li').hover(
+				function(){
+					$(this).find('.info').slideDown();
+				},
+				function(){
+					$(this).find('.info').slideUp();
+				});
+		},
+		_portfolioMasonry: function(){
+			$('.portfolio').imagesLoaded(function(){
+				$(this).masonry({
+					columnWidth: function(pageWidth){
+						var colWidth = (pageWidth / 2) -10;
+						$('.portfolio li').css('width', colWidth);
+						return colWidth;
+					},
+					gutterWidth: 20
+				});
+			});
 		},
 		_resizePages: function(){
 			var h = $(window).height();

@@ -13,6 +13,8 @@ body {
 	background-color: black;
 	height: 70px;
 
+	z-index: 1000;
+
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -150,13 +152,45 @@ body {
 		margin-top: 90px;
 	}
 
+	.portfolio-filter-container {
+		position: absolute;
+		right: -200px;
+		width: 200px;
+		background-color: black;
+	}
+
 	.portfolio {
 		list-style: none;
 		margin: 0;
-		padding: 0;
+		padding: 20px;
 
 		> li {
+			width: 400px;
+			margin-bottom: 20px;
+
+			.info {
+				position: absolute;
+				bottom: 0;
+				background-color: black;
+				width: 90%;
+				opacity: .9;
+				color: white;
+				padding: 5%;
+				font-weight: 100;
+				display: none;
+				z-index: 10;
 			
+				h2 {
+					color: @lime;
+					font-weight: 100;
+					margin-top: 0;
+
+					.category {
+						color: #BEBEBE;
+						font-size: 14px;
+					}
+				}
+			}
 		}
 	}
 }
