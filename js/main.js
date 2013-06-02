@@ -33,7 +33,7 @@ $(function(){
 			});
 		},
 		_infoBoxSetup: function(){
-			$('.portfolio li').hover(
+			$('.portfolio li').hoverIntent(
 				function(){
 					$(this).find('.info').slideDown();
 				},
@@ -45,7 +45,12 @@ $(function(){
 			$('.portfolio').imagesLoaded(function(){
 				$(this).masonry({
 					columnWidth: function(pageWidth){
-						var colWidth = (pageWidth / 2) -10;
+						var colWidth = (pageWidth / 2) - 10;
+						
+						if(colWidth < 300) {
+							colWidth = pageWidth ;
+						}
+
 						$('.portfolio li').css('width', colWidth);
 						return colWidth;
 					},
